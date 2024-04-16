@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="GradeCalculator">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TotalCredits" type="xs:integer"></xs:element>
+                <xs:element name="SubjectDetails">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subject" minOccurs="0" maxOccurs="unbounded" >
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="subjectName" type="xs:string"></xs:element>
+                                        <xs:element name="credits" type="xs:integer"></xs:element>
+                                        <xs:element name="CIE_marks" type="xs:integer"></xs:element>
+                                        <xs:element name="SEE_marks" type="xs:integer"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType> 
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

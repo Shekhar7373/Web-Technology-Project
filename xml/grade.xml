@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE GradeCalculator SYSTEM "./gradeDTD.dtd">-->
+
+<GradeCalculator xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+        xs:noNamespaceSchemaLocation="./xsd/gradeXSD.xsd" >
+    <TotalCredits>20</TotalCredits>
+    <SubjectDetails>
+        <subject id="sub1">
+            <subjectName>subject1</subjectName>
+            <credits>4</credits>
+            <CIE_marks>50</CIE_marks>
+            <SEE_marks>100</SEE_marks>
+        </subject>
+        <subject id="sub2">
+            <subjectName>subject2</subjectName>
+            <credits>4</credits>
+            <CIE_marks>50</CIE_marks>
+            <SEE_marks>100</SEE_marks>
+        </subject>
+        <subject id="sub3">
+            <subjectName>subject3</subjectName>
+            <credits>4</credits>
+            <CIE_marks>50</CIE_marks>
+            <SEE_marks>100</SEE_marks>
+        </subject>
+        <!--Add more subjects if needed-->
+    </SubjectDetails>
+</GradeCalculator>

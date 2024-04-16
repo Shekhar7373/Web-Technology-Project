@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+
+    <style>
+        /* input {
+            height: 16px;
+        }
+        button {
+            font-size: 14px;
+            height: 40px;
+            width: 180px;
+        }
+        .individual_credits {
+            width: 22px;
+        }
+        .individual_SEE{
+            margin-left: 100px;
+        } */
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>CGPA Calculator</h2>
+        <label for="credits">Total Credits:</label>
+        <input type="number" id="credits" min="1" required />
+        <br />
+    </center>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="grades" required placeholder="subject1" class="individual_credits" />
+                    <input type="number" id="grades" placeholder="credits" required class="individual_credits" />
+                    <label for="individual_CIE">CIE Marks : </label>
+                    <input type="number" id="grades" required />
+                    <label for="individual_SEE">SEE Marks : </label>
+                    <input type="number" id="grades" required />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <center>
+        <button onclick="calculateCGPA()">Go To Home</button>
+        <button type="reset">Clear</button>
+        <div id="result"></div>
+    </center>
+    <br>
+    <center>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <div id="result"></div>
+    </center>
+</body>
+
+</html>

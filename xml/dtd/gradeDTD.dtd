@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT GradeCalculator (TotalCredits,SubjectDetails)>
+<!ELEMENT TotalCredits (#PCDATA)>
+
+<!ELEMENT SubjectDetails (subject+)>
+<!ELEMENT subject (subjectName,credits,CIE_marks,SEE_marks)>
+<!ELEMENT subjectName (#PCDATA)>
+<!ELEMENT credits (#PCDATA)>
+<!ELEMENT CIE_marks (#PCDATA)>
+<!ELEMENT SEE_marks (#PCDATA)>
+<!ATTLIST subject id CDATA #IMPLIED>
