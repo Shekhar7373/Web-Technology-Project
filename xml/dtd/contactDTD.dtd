@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT contactDetails (Name,email,message)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT message (#PCDATA)>

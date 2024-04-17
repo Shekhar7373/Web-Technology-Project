@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE contactDetails SYSTEM "./dtd/contactDTD.dtd"> -->
+<contactDetails  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="./xsd/contactXSD.xsd">
+    <Name>Your Name</Name>
+    <email>xyz@gmail.com</email>
+    <message>Your valuable message or feedback</message>
+</contactDetails>
