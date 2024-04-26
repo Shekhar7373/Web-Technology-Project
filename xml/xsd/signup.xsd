@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="SignUpDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"></xs:element>
+                <xs:element name="USN" type="xs:string"></xs:element>
+                <xs:element name="PhoneNo" type="xs:integer"></xs:element>
+                <xs:element name="Branch" type="xs:string"></xs:element>
+                <xs:element name="Mail" type="xs:string"></xs:element>
+                <xs:element name="password" type="xs:string"></xs:element>
+                <xs:element name="confirmPassword" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

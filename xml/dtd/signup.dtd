@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT SignUpDetails (name,USN,PhoneNo,Branch,Mail,password,confirmPassword)>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT USN (#PCDATA)>
+
+<!ELEMENT PhoneNo (#PCDATA)>
+
+<!ELEMENT Branch (#PCDATA)>
+
+<!ELEMENT Mail (#PCDATA)>
+
+<!ELEMENT password (#PCDATA)>
+
+<!ELEMENT confirmPassword (#PCDATA)>

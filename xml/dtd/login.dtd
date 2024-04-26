@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT LoginDetails (USN,Password)>
+<!ELEMENT USN (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>

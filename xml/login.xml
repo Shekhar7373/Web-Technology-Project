@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LoginDetails xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="./xsd/login.xsd">
+    <USN>2SD22CSXXX</USN>
+    <Password>*****</Password>
+</LoginDetails>

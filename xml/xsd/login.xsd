@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="LoginDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="USN" type="xs:string"></xs:element>
+                <xs:element name="Password" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
