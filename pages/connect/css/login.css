@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "noto sans";
+}
+body{
+    background-color: #1a1e2b;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1e2b;
+}
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, .5);
+    /* backdrop-filter: blur(2px); */
+}
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 300px;
+    margin: 25px 0;
+    border-bottom: 2px solid #ffff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    font-size: 1em;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .4s;
+    color: #ffff;
+}
+
+.input-box .icon{
+    position:absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #ffff;
+    padding: 0 8px 0 30px;
+}
+.remember-forgot{
+    margin: -15px 0 15px 0;
+    font-size: .9em;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    margin-right: 3px;
+    
+}
+
+.remember-forgot a{
+    color: #ffff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #3C5B6F;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 600;
+}
+.signup-link{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 8px 0;
+    color: #ffff;
+}
+.signup-link p a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+}
+.signup-link p a:hover{
+    text-decoration: underline;
+}
