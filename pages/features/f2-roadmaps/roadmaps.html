@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!-- css link -->
         <link rel="stylesheet" href="style-roadmaps.css">
+        <!-- Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
@@ -24,12 +26,13 @@
             </nav>
             <div class="search-bar">
                 <div class="search-row">
-                    <input type="text" placeholder="search-bar">
+                    <input type="text"  id="input-box" placeholder="Search" autocomplete="off">
+                    <button><i class="ri-search-line"></i></button>
                 </div>
-                <div class="result"></div>
+                <div class="sugg-box"></div>
             </div>
         </header>
 
-        <script src="script-roadmaps.js"></script>
+        <script src="./scripts/autocomplete.js"></script>
     </body>
     </html>
