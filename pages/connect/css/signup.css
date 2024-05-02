@@ -44,7 +44,7 @@ h2{
     font-size: 1em;
     pointer-events: none;
     transform: translateY(-50%);
-    transition: .4s;
+    transition: .3s;
     color: #ffff;
 }
 .input-box input{
