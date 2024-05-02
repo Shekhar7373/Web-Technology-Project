@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icons  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contact Us</title>
 </head>
+
 <body>
-    <div id="nav-bar">
-        <a href="index.html"><i class="ri-arrow-left-circle-line"></i></a>
-    </div>
-    <div id="container">
-        <h1>Connect with us</h1>
-        <div id="contact-us">
+    <section>
+        <div id="nav-bar">
+            <a href="index.html"><i class="ri-arrow-left-circle-line"></i></a>
+        </div>
+
+        <div class="contact-page">
             <form action="">
-                <label>Name :</label>
-                <input type="text" required> <br>
-
-                <label>Email : </label>
-                <input type="email" required> <br>
-
-                <label>Message : </label>
-                <textarea name="txt-mesg" cols="30" rows="10" required></textarea>   <br>
-
-                <button>Submit</button>
+                <h2>Contact Us</h2>
+                <div class="input-box">
+                    <input type="text" required> <br>
+                    <label>Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" required> <br>
+                    <label>Email</label>
+                </div>
+                <div class="txtarea">
+                    <textarea name="txt-mesg" class="txtmsg" cols="30" rows="10" required placeholder="   Your Message"></textarea> <br>
+                </div>
+                <button type="submit" class="submitbtn">Submit</button>
             </form>
         </div>
-    </div>
+    </section>
+
 </html>
