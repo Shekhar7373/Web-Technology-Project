@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto sans";
+  }
+  body{
+      background-color: whitesmoke;
+  }
+  
+  header .txt-format {
+    font-family: "noto sans";
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  header {
+    position: relative;
+    width: 100%;
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+  header p.txt-format {
+      font-size: 1.5em;
+      color: #ffffff;
+  }
+  .nav__links {
+      list-style: none;
+  }
+  .nav__links li {
+      display: inline-block;
+      padding: 0 20px;
+  }
+  
+  .nav__links li a {
+      transition: all 0.3s ease 0s;
+      font-size: 1.1em;
+  }
+  header:hover {
+      background-color: rgba(255, 255, 255, 0.071);
+  }
+  
+  header:hover a {
+      color: grey;
+  }
+  .nav__links a:hover {
+      color: white;
+  }
+  .search-bar {
+      width: 18vw;
+      border-radius: 20px;
+      background-color: rgba(245, 245, 245, 0.212);
+      position: relative;
+  }
+  .search-row {
+      width: inherit;
+      height: auto;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+  }
+  #input-box {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: 0;
+      font-size: 1em;
+  }
+  
+  .search-row button {
+      border: none;
+      outline: none;
+      background: transparent;
+  }
+  
+  .search-row button .ri-search-line {
+      width: 22px;
+      color: #000;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  #input-box::placeholder {
+      color: #fff;
+      opacity: 0.6;
+  }
+  .sugg-box {
+      width: inherit;
+  }
+  .sugg-box ul{
+      width: inherit;
+      position: absolute;
+      border-top: 1px solid #999;
+      z-index: 100;
+      background-color: whitesmoke;
+      border-radius: 20px;
+      padding: 5px 10px;
+  }
+  .sugg-box li {
+      list-style: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+  }
+  
+  .sugg-box li:hover{
+      background-color: aliceblue;
+  }
+  
+  header:hover .search-bar{
+      background-color: #333;
+  }
+  header:hover .ri-search-line{
+      color: #fff;
+  }
+  header:hover #input-box::placeholder{
+      color: #fff;
+  }
+  header:hover #input-box{
+      background-color: #333;
+      color: #fff;
+  }
+.title-section {
+    position: relative;
+    width:100%;
+    height: 30vh;
+    padding-left: 11%;
+    padding-right: 20%;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+
+.title-section h1{
+    font-size: 2em;
+    font-weight: 600;
+    padding-top: 20px;
+    /* color: #fff; */
+    
+}
+
+.title-section p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ababab;
+    margin: 20px 0;
+}
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* chnage it  */
+#content {
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+.title-des {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 20px;
+}
+.title-des h3 {
+    padding: 15px;
+    padding-left: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+.title-des p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.accordion {
+    width: 80%;
+    margin: auto;
+}
+.accordion .accordion-li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(0, 0, 0, 0.15)
+}
+.accordion .accordion-li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion .accordion-li label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size:  1.6em;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.sub-sections {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s, padding 1s;
+}
+
+.accordion input[type="radio"]:checked + label + .sub-sections {
+    max-height: max-content;
+    padding: 20px 20px 30px;
+}
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+.sub-sections li {
+    list-style: none;
+    padding-bottom: 20px;   
+    font-size: 1em;
+}
+
+.sub-sections li h4 {
+    font-size: 1.5em;
+    padding: 10px;
+}
+.sub-sections li p {
+    font-size: 1.2em;
+    padding:  0 10px;
+    line-height: 25px;
+}
+
+.sub-sections li .links {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 10px 0  0 10px;
+
+}
+
+.sub-sections li .links a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 400;
+    font-size: 1em;
+}
