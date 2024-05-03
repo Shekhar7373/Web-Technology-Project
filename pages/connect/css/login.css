@@ -40,11 +40,11 @@ h2{
 .input-box label{
     position: absolute;
     top: 50%;
-    left: 50px;
+    left: 15px;
     font-size: 1em;
     pointer-events: none;
     transform: translateY(-50%);
-    transition: .4s;
+    transition: .3s;
     color: #ffff;
 }
 
