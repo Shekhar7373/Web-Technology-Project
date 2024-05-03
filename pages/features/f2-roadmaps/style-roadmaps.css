@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "noto sans";
 }
 body{
     background-color: #000;
 }
 
-header li,
-a,
-p {
+header .txt-format {
   font-family: "noto sans";
   text-decoration: none;
   color: #333;
@@ -25,9 +24,9 @@ header {
   padding: 30px 40px;
   align-items: center;
 }
-header p {
+header p.txt-format {
     font-size: 1.5em;
-    color: #6d6d6d;
+    color: #ffffff;
 }
 .nav__links {
     list-style: none;
@@ -48,14 +47,7 @@ header:hover {
 header:hover a {
     color: grey;
 }
-header:hover p {
-    color: grey;
-}
-
 .nav__links a:hover {
-    color: white;
-}
-header p:hover {
     color: white;
 }
 .search-bar {
@@ -130,4 +122,27 @@ header:hover #input-box::placeholder{
 header:hover #input-box{
     background-color: #333;
     color: #fff;
+}
+
+.title-content {
+    color: #fff;
+    /* background-color: rgb(201, 151, 159); */
+    height: 45vh;
+    padding: 0 20%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.title-content h1 {
+    padding: 40px 0 0 0;
+    font-size: 3em;
+}
+.title-content p {
+    padding-top: 15px;
+    font-size: 1.2em;
+    max-width: 50vw;
+   text-align: center;
 }

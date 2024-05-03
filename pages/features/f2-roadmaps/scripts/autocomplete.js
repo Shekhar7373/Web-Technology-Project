@@ -41,5 +41,6 @@ function display(result) {
 
 function selectIp(list) {
     inputBox.value = list.innerHTML;
+    inputBox.style = "color:white";
     suggestionBox.style = "display:none";
 }
