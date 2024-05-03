@@ -2,96 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-grade.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <title>CGPA Calculator</title>
-    <link rel="stylesheet" href="style-grade.css">
 </head>
 
 <body>
     <section>
-        <h2>CGPA Calculator</h2>
+        <header>
+            <p class="txt-format gsap-navtitle">Nexus Sync!</p>
+            <nav>
+                <ul class="nav__links">
+                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="../../src/index.html">Home</a></li>
+                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Guide</a></li>
+                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="../../connect/src/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <div class="search-row">
+                    <input type="text" id="input-box" placeholder="Search" autocomplete="off">
+                    <button><i class="ri-search-line"></i></button>
+                </div>
+            </div>
+        </header>
         <div class="container">
-            <div class="totalcredits">
-                <input type="number" required placeholder="Total credit" class="totalcreditsbox">
-            </div>
-            <div class="subjects">
-                <div class="sub1">
-                    <input type="text" required placeholder="Subject1">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
+            <div class="backimages">
+                <div class="page-header-text">
+                    <h1 class="page-header__title" itemprop="name">Cumulative GPA Calculator</h1>
+                    <p class="page-header__description" itemprop="description">Calculate your cumulative GPA, and
+                        see how your current (and future) grades will affect your performance.</p>
                 </div>
-                <div class="sub2">
-                    <input type="text" required placeholder="Subject2">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub3">
-                    <input type="text" required placeholder="Subject3">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub4">
-                    <input type="text" required placeholder="Subject4">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub5">
-                    <input type="text" required placeholder="Subject5">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub6">
-                    <input type="text" required placeholder="Subject6">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub7">
-                    <input type="text" required placeholder="Subject7">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
-                </div>
-                <div class="sub8">
-                    <input type="text" required placeholder="Subject8">
-                    <input type="number" required placeholder="Subject1 credit">
-                    <label>CIE</label>
-                    <input type="number" required placeholder="Marks">
-                    <label>SEE</label>
-                    <input type="number" required placeholder="Marks">
+                <div class="page-header-img">
+                    <img src="./study.svg">
                 </div>
             </div>
-            <div class="buttons">
-                <button onclick="calculateCGPA()">Calculate CGPA</button>
-                <!-- <button onclick="" >Go To Home</button> -->
-                <a href="../../src/index.html"><button>Go To Home</button></a>
-                <button type="reset">Clear</button>
+            <div class="calculator">
+                <table>
+                    <tr>
+                        <h2>Current CGPA (Optional)</h2>
+                        <td><input type="text" placeholder="Current CGPA" class="cgpa"></td>
+                        <td><input type="text" placeholder="Total Credits" class="total-credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+                </table>
+                <div class="calculateCGPA">
+                    <input type="button" value="Calculate CPGA" class="calculatebtn">
+                </div>
+                <br>
+                <br>
 
+                <table>
+                    <tr>
+                        <h2>Semester 1 </h2>
+                        <td><input type="text" placeholder="Course name" class="course"></td>
+                        <td><select name="" id="">
+                                <option value="-1">Grade</option>
+                                <option value="1">O</option>
+                                <option value="1">A+</option>
+                                <option value="2">A</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">P</option>
+                                <option value="6">F</option>
+                            </select></td>
+                        <td><input type="text" placeholder="Credits" class="credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Course name" class="course"></td>
+                        <td><select name="" id="">
+                                <option value="-1">Grade</option>
+                                <option value="1">O</option>
+                                <option value="1">A+</option>
+                                <option value="2">A</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">P</option>
+                                <option value="6">F</option>
+                            </select></td>
+                        <td><input type="text" placeholder="Credits" class="credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Course name" class="course"></td>
+                        <td><select name="" id="">
+                                <option value="-1">Grade</option>
+                                <option value="1">O</option>
+                                <option value="1">A+</option>
+                                <option value="2">A</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">P</option>
+                                <option value="6">F</option>
+                            </select></td>
+                        <td><input type="text" placeholder="Credits" class="credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Course name" class="course"></td>
+                        <td><select name="" id="">
+                                <option value="-1">Grade</option>
+                                <option value="1">O</option>
+                                <option value="1">A+</option>
+                                <option value="2">A</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">P</option>
+                                <option value="6">F</option>
+                            </select></td>
+                        <td><input type="text" placeholder="Credits" class="credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Course name" class="course"></td>
+                        <td><select name="" id="">
+                                <option value="-1">Grade</option>
+                                <option value="1">O</option>
+                                <option value="1">A+</option>
+                                <option value="2">A</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">P</option>
+                                <option value="6">F</option>
+                            </select></td>
+                        <td><input type="text" placeholder="Credits" class="credits"></td>
+                        <td><input type="button" class="clearbtn" value="clear"></td>
+                    </tr>
+
+                </table>
+                <div class="calculateCGPA">
+                    <input type="button" value="Calculate SPGA" class="calculatebtn">
+                </div>
             </div>
         </div>
     </section>
-
-    <script src="script-grade.js"></script>
 </body>
 
 </html>
