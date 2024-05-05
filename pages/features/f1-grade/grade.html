@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style-grade.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +20,9 @@
             <p class="txt-format gsap-navtitle">Nexus Sync!</p>
             <nav>
                 <ul class="nav__links">
-                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="../../src/index.html">Home</a></li>
+                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Home</a></li>
                     <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Guide</a></li>
-                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="../../connect/src/contact.html">Contact</a></li>
+                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Contact</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
@@ -43,107 +43,96 @@
                     <img src="./study.svg">
                 </div>
             </div>
-            <div class="calculator">
-                <table>
-                    <tr>
-                        <h2>Current CGPA (Optional)</h2>
-                        <td><input type="text" placeholder="Current CGPA" class="cgpa"></td>
-                        <td><input type="text" placeholder="Total Credits" class="total-credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-                </table>
-                <div class="calculateCGPA">
-                    <input type="button" value="Calculate CPGA" class="calculatebtn">
+            <div class="calculatorresult">
+                <div class="calculator">
+                    <table>
+                        <tr>
+                            <h2>Current CGPA (Optional)</h2>
+                            <td><input type="text" placeholder="Current CGPA" class="cgpa"></td>
+                            <td><input type="text" placeholder="Total Credits" class="total-credits"></td>
+                        </tr>
+                    </table>
+                    <div class="calculateCGPA">
+                        <input type="button" value="Calculate CPGA" class="calculatebtn">
+                    </div>
+                    <br>
+                    <br>
+
+                    <table>
+                        <tr>
+                            <h2>Semester 1 </h2>
+                            <td><input type="text" placeholder="Course name" class="course"></td>
+                            <td><select name="" id="">
+                                    <option value="-1">Grade</option>
+                                    <option value="1">O</option>
+                                    <option value="2">A+</option>
+                                    <option value="3">A</option>
+                                    <option value="4">B+</option>
+                                    <option value="5">B</option>
+                                    <option value="6">C</option>
+                                    <option value="7">P</option>
+                                    <option value="8">F</option>
+                                </select></td>
+                            <td><input type="text" placeholder="Credits" class="credits"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Course name" class="course"></td>
+                            <td><select name="" id="">
+                                    <option value="-1">Grade</option>
+                                    <option value="1">O</option>
+                                    <option value="1">A+</option>
+                                    <option value="2">A</option>
+                                    <option value="3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="4">C</option>
+                                    <option value="5">P</option>
+                                    <option value="6">F</option>
+                                </select></td>
+                            <td><input type="text" placeholder="Credits" class="credits"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Course name" class="course"></td>
+                            <td><select name="" id="">
+                                    <option value="-1">Grade</option>
+                                    <option value="1">O</option>
+                                    <option value="1">A+</option>
+                                    <option value="2">A</option>
+                                    <option value="3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="4">C</option>
+                                    <option value="5">P</option>
+                                    <option value="6">F</option>
+                                </select></td>
+                            <td><input type="text" placeholder="Credits" class="credits"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Course name" class="course"></td>
+                            <td><select name="" id="">
+                                    <option value="-1">Grade</option>
+                                    <option value="1">O</option>
+                                    <option value="1">A+</option>
+                                    <option value="2">A</option>
+                                    <option value="3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="4">C</option>
+                                    <option value="5">P</option>
+                                    <option value="6">F</option>
+                                </select></td>
+                            <td><input type="text" placeholder="Credits" class="credits"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for=""><input type="button" value="Add Course +" class="addcourse"> </label>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div class="calculateCGPA">
+                        <input type="button" value="Calculate SPGA" class="calculatebtn">
+                    </div>
                 </div>
-                <br>
-                <br>
-
-                <table>
-                    <tr>
-                        <h2>Semester 1 </h2>
-                        <td><input type="text" placeholder="Course name" class="course"></td>
-                        <td><select name="" id="">
-                                <option value="-1">Grade</option>
-                                <option value="1">O</option>
-                                <option value="1">A+</option>
-                                <option value="2">A</option>
-                                <option value="3">B+</option>
-                                <option value="3">B</option>
-                                <option value="4">C</option>
-                                <option value="5">P</option>
-                                <option value="6">F</option>
-                            </select></td>
-                        <td><input type="text" placeholder="Credits" class="credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Course name" class="course"></td>
-                        <td><select name="" id="">
-                                <option value="-1">Grade</option>
-                                <option value="1">O</option>
-                                <option value="1">A+</option>
-                                <option value="2">A</option>
-                                <option value="3">B+</option>
-                                <option value="3">B</option>
-                                <option value="4">C</option>
-                                <option value="5">P</option>
-                                <option value="6">F</option>
-                            </select></td>
-                        <td><input type="text" placeholder="Credits" class="credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Course name" class="course"></td>
-                        <td><select name="" id="">
-                                <option value="-1">Grade</option>
-                                <option value="1">O</option>
-                                <option value="1">A+</option>
-                                <option value="2">A</option>
-                                <option value="3">B+</option>
-                                <option value="3">B</option>
-                                <option value="4">C</option>
-                                <option value="5">P</option>
-                                <option value="6">F</option>
-                            </select></td>
-                        <td><input type="text" placeholder="Credits" class="credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Course name" class="course"></td>
-                        <td><select name="" id="">
-                                <option value="-1">Grade</option>
-                                <option value="1">O</option>
-                                <option value="1">A+</option>
-                                <option value="2">A</option>
-                                <option value="3">B+</option>
-                                <option value="3">B</option>
-                                <option value="4">C</option>
-                                <option value="5">P</option>
-                                <option value="6">F</option>
-                            </select></td>
-                        <td><input type="text" placeholder="Credits" class="credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Course name" class="course"></td>
-                        <td><select name="" id="">
-                                <option value="-1">Grade</option>
-                                <option value="1">O</option>
-                                <option value="1">A+</option>
-                                <option value="2">A</option>
-                                <option value="3">B+</option>
-                                <option value="3">B</option>
-                                <option value="4">C</option>
-                                <option value="5">P</option>
-                                <option value="6">F</option>
-                            </select></td>
-                        <td><input type="text" placeholder="Credits" class="credits"></td>
-                        <td><input type="button" class="clearbtn" value="clear"></td>
-                    </tr>
-
-                </table>
-                <div class="calculateCGPA">
-                    <input type="button" value="Calculate SPGA" class="calculatebtn">
+                <div class="result">
+                    <span>Result is displayed Here</span>
                 </div>
             </div>
         </div>
