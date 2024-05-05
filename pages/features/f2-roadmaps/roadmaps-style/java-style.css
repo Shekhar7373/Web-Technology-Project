@@ -216,7 +216,7 @@ input[type="radio"] {
 .sub-sections {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s, padding 1s;
+    transition: max-height 0.5s, padding 0.5s;
 }
 
 .accordion input[type="radio"]:checked + label + .sub-sections {
