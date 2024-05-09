@@ -179,8 +179,10 @@
     font-size: 1.2em;
     font-weight: 500;
 }
+
+
 .accordion {
-    width: 80%;
+    max-width: 80%;
     margin: auto;
 }
 .accordion .accordion-li {
@@ -208,24 +210,22 @@
     font-size:  1.6em;
     font-weight: 600;
 }
-
-input[type="radio"] {
-    display: none;
-}
-
-.sub-sections {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="radio"]:checked + label + .sub-sections {
-    max-height: max-content;
-    padding: 20px 20px 30px;
-}
-.accordion input[type="radio"]:checked + label::before {
+.accordion .accordion-li.active label::before {
     content: '-';
 }
+.accordion .accordion-li .sub-sections {
+    max-height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion .accordion-li.active .sub-sections {
+    padding: 20px 20px 30px;
+    max-height: max-content;
+}
+
+
 
 .sub-sections li {
     list-style: none;
