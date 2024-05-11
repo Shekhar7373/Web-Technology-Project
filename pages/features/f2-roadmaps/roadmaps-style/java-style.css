@@ -127,27 +127,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.left-btn {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.left-btn button {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    font-size: 0.9em;
-    background-color: red;
-}
-.right-btn button {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    font-size: 0.9em;
-    background-color: red;
-}
 /* chnage it  */
 /* #content {
     background-color: #9AE975;
