@@ -55,10 +55,10 @@
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your usn & password</span>
-                <input type="text" placeholder="USN" id="chkusn"/>
+                <input type="text" placeholder="USN" id="chkusn" oninput="chkvalidity()" id="chkusn"/>
                 <input type="password" placeholder="Password" id="chkpasswd" />
                 <a href="#">Forget Your Password?</a>
-                <button type="button" onclick="verify()" id="loginbtn">Sign In</button>
+                <button type="button" oninput="verify()" id="loginbtn">Sign In</button>
             </form>
         </div>
         <div class="toggle-container">
