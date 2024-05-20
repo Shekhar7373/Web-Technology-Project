@@ -38,6 +38,8 @@ function addTable() {
 
     // Create and append credits input
     createInputCell("number", "credits", "Credits");
+    
+    // let heightcalculator = document.getElementById("calculator").style.height =  "40px"
 
     // Use insertAdjacentElement to insert the new row before the button row
     buttonRow.insertAdjacentElement('beforebegin', newRow);
