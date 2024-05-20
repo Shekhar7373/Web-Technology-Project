@@ -1,0 +1,7 @@
+Colors : 
+ #c8fd7c  : green shade
+#9AE975 : one more shade of green
+
+#191a22  : dark blue shade 
+
+#f3f3f3    : greyish tone(off white)
