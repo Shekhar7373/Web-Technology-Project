@@ -4,35 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/contact.css">
     <title>Contact Us</title>
 </head>
 
 <body>
     <section>
-        <div id="nav-bar">
-            <a href="../../../index.html"><i class="ri-arrow-left-circle-line"></i></a>
-        </div>
-
-        <div class="contact-page">
-            <form action="">
-                <h2>Contact Us</h2>
-                <div class="input-box">
-                    <input type="text" required> <br>
-                    <label>Name</label>
-                </div>
-                <div class="input-box">
-                    <input type="email" required> <br>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-control">
+                    <input type="email" required>
                     <label>Email</label>
                 </div>
-                <div class="txtarea">
-                    <textarea name="txt-mesg" class="txtmsg" cols="30" rows="10" required placeholder="   Your Message"></textarea> <br>
+
+                <div class="form-control">
+                    <textarea name="txt-mesg" class="txtmsg" cols="30" rows="10" required
+                        placeholder="Your Message"></textarea>
                 </div>
-                <button type="submit" class="submitbtn">Submit</button>
+                <input type="button" value="Submit" class="btn">
             </form>
         </div>
     </section>
+</body>
 
 </html>
