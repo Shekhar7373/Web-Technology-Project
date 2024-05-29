@@ -22,7 +22,6 @@
             <nav>
                 <ul class="nav__links">
                     <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Home</a></li>
-                    <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Guide</a></li>
                     <li class="txt-format gsap-navlinks"><a class="txt-format" href="">Contact</a></li>
                 </ul>
             </nav>
@@ -48,9 +47,9 @@
                 <div class="calculator" id="calculator">
                     <table>
                         <tr>
-                            <h2>Current CGPA (Optional)</h2>
-                            <td><input type="text" placeholder="Previous CGPA" id="previous-cgpa" class="cgpa"></td>
-                            <td><input type="text" placeholder="Current Year SGPA" id="current-year-sgpa" class="sgpa">
+                            <h2>Current CGPA</h2>
+                            <td><input type="text" placeholder="Previous CGPA" id="previous-cgpa" class="cgpa"  autocomplete="off"></td>
+                            <td><input type="text" placeholder="Current Year SGPA" id="current-year-sgpa" class="sgpa"  autocomplete="off">
                             </td>
                         </tr>
                     </table>
@@ -59,10 +58,10 @@
                     </div>
                     <br>
                     <br>
-                    <h2>Semester 1 </h2>
+                    <h2>Semester</h2>
                     <table id="semester-table">
                         <tr class="course-row">
-                            <td><input type="text" placeholder="Course name" class="course" id="course-name"></td>
+                            <td><input type="text" placeholder="Course name" class="course" id="course-name" autocomplete="off"></td>
                             <td><select name="" class="grade" id="course-grade">
                                     <option value="-1">Grade</option>
                                     <option value="O">O</option>
