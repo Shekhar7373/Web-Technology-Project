@@ -10,12 +10,8 @@ loginBtn.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
-// For Demo purpose one student details is added to validate & verify
-var name = "a";
-var usn = "a";
-var mobile = "1234567890";
-var email = "sdm@gmail.com";
-var password = "a";
+usn = "2SD22CS094";
+password = "a";
 
 function validateName() {
   const name = document.getElementById("name").value;
@@ -171,6 +167,7 @@ function verify() {
   if (validateSignInUSN() && validateSignInPassword()) {
     // Perform sign-in logic
     alert("Logged in successfully!");
+    window.location = "../../src/index.html";
   } else {
     alert("Invalid login details! Please try again.");
   }

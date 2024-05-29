@@ -12,7 +12,7 @@
         rel="stylesheet">
 
     <title>CGPA Calculator</title>
-    
+
 </head>
 
 <body>
@@ -49,45 +49,47 @@
                     <table>
                         <tr>
                             <h2>Current CGPA (Optional)</h2>
-                            <td><input type="text" placeholder="Current CGPA" class="cgpa"></td>
-                            <td><input type="text" placeholder="Total Credits" class="total-credits"></td>
+                            <td><input type="text" placeholder="Previous CGPA" id="previous-cgpa" class="cgpa"></td>
+                            <td><input type="text" placeholder="Current Year SGPA" id="current-year-sgpa" class="sgpa">
+                            </td>
                         </tr>
                     </table>
                     <div class="calculateCGPA">
-                        <input type="button" value="Calculate CPGA" class="calculatebtn">
+                        <input type="button" value="Calculate CPGA" class="calculatebtn1" id="calculate-cgpa-btn">
                     </div>
                     <br>
                     <br>
                     <h2>Semester 1 </h2>
-                    <table>
-                        <tr>
-                            <td><input type="text" placeholder="Course name" class="course"></td>
-                            <td><select name="" id="">
+                    <table id="semester-table">
+                        <tr class="course-row">
+                            <td><input type="text" placeholder="Course name" class="course" id="course-name"></td>
+                            <td><select name="" class="grade" id="course-grade">
                                     <option value="-1">Grade</option>
-                                    <option value="1">O</option>
-                                    <option value="2">A+</option>
-                                    <option value="3">A</option>
-                                    <option value="4">B+</option>
-                                    <option value="5">B</option>
-                                    <option value="6">C</option>
-                                    <option value="7">P</option>
-                                    <option value="8">F</option>
+                                    <option value="O">O</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A">A</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="P">P</option>
+                                    <option value="F">F</option>
                                 </select></td>
-                            <td><input type="text" placeholder="Credits" class="credits"></td>
+                            <td><input type="text" placeholder="Credits" class="credits" id="course-credits"></td>
                         </tr>
                         <tr>
                             <td>
-                                <label for=""><input type="button" value="Add Course +" class="addcourse" onclick="createAlert()"> </label>
+                                <label for=""><input type="button" value="Add Course +" class="addcourse"
+                                        id="add-course-btn"> </label>
                             </td>
                         </tr>
-
                     </table>
                     <div class="calculateCGPA">
-                        <input type="button" value="Calculate SPGA" class="calculatebtn">
+                        <input type="button" value="Calculate SPGA" class="calculatebtn2" id="calculate-sgpa-btn">
                     </div>
                 </div>
                 <div class="result">
-                    <span>Result is displayed Here</span>
+                    <span id="result-display1" class="result1">CGPA :</span>
+                    <span id="result-display2" class="result2">SGPA :</span>
                 </div>
             </div>
         </div>
