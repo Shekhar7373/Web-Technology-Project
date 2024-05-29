@@ -3,5 +3,7 @@ Colors :
 #9AE975 : one more shade of green
 
 #191a22  : dark blue shade 
+#c9d6ff ;purple
 
+#e1e7f9
 #f3f3f3    : greyish tone(off white)
