@@ -1,18 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("calculate-sgpa-btn").addEventListener("click", calculateSGPA);
-  document.getElementById("calculate-cgpa-btn").addEventListener("click", calculateCGPA);
-  document.getElementById("add-course-btn").addEventListener("click", addCourse);
+  document
+    .getElementById("calculate-sgpa-btn")
+    .addEventListener("click", calculateSGPA);
+  document
+    .getElementById("calculate-cgpa-btn")
+    .addEventListener("click", calculateCGPA);
+  document
+    .getElementById("add-course-btn")
+    .addEventListener("click", addCourse);
 });
 
 const gradePoints = {
-  "O": 10,
+  O: 10,
   "A+": 9,
-  "A": 8,
+  A: 8,
   "B+": 7,
-  "B": 6,
-  "C": 5,
-  "P": 4,
-  "F": 0,
+  B: 6,
+  C: 5,
+  P: 4,
+  F: 0,
 };
 
 function calculateSGPA() {
@@ -21,28 +27,31 @@ function calculateSGPA() {
 
   const courseRows = document.getElementsByClassName("course-row");
   for (let i = 0; i < courseRows.length; i++) {
-      const grade = courseRows[i].getElementsByClassName("grade")[0].value;
-      const credits = parseFloat(courseRows[i].getElementsByClassName("credits")[0].value);
+    const grade = courseRows[i].getElementsByClassName("grade")[0].value;
+    const credits = parseFloat(
+      courseRows[i].getElementsByClassName("credits")[0].value
+    );
 
-      console.log(`Row ${i + 1}: Grade - ${grade}, Credits - ${credits}`);
+    console.log(`Row ${i + 1}: Grade - ${grade}, Credits - ${credits}`);
 
-      if (grade !== "-1" && !isNaN(credits)) {
-          console.log("Testing: " + gradePoints[grade]);
-          if (gradePoints[grade] !== undefined) {
-              totalCredits += credits;
-              totalPoints += gradePoints[grade] * credits;
-          } else {
-              console.log(`Invalid grade value: ${grade}`);
-          }
+    if (grade !== "-1" && !isNaN(credits)) {
+      console.log("Testing: " + gradePoints[grade]);
+      if (gradePoints[grade] !== undefined) {
+        totalCredits += credits;
+        totalPoints += gradePoints[grade] * credits;
       } else {
-          document.getElementById("result-display2").textContent = "Invalid input. Please enter valid values.";
-          return;
+        console.log(`Invalid grade value: ${grade}`);
       }
+    } else {
+      document.getElementById("result-display2").textContent =
+        "Invalid input. Please enter valid values.";
+      return;
+    }
   }
 
   const sgpa = totalPoints / totalCredits;
   document.getElementById("result-display2").textContent = `SGPA: ${
-      isNaN(sgpa) ? "Invalid input. Please enter valid values." : sgpa.toFixed(2)
+    isNaN(sgpa) ? "Invalid input. Please enter valid values." : sgpa.toFixed(2)
   }`;
 }
 
@@ -50,17 +59,22 @@ function calculateCGPA() {
   const previousCGPAInput = document.getElementById("previous-cgpa");
   const currentYearSGPAInput = document.getElementById("current-year-sgpa");
 
-  const previousCGPA = previousCGPAInput ? parseFloat(previousCGPAInput.value) : NaN;
-  const currentYearSGPA = currentYearSGPAInput ? parseFloat(currentYearSGPAInput.value) : NaN;
+  const previousCGPA = previousCGPAInput
+    ? parseFloat(previousCGPAInput.value)
+    : NaN;
+  const currentYearSGPA = currentYearSGPAInput
+    ? parseFloat(currentYearSGPAInput.value)
+    : NaN;
 
   if (!isNaN(previousCGPA) && !isNaN(currentYearSGPA)) {
-      const cgpa = (previousCGPA + currentYearSGPA) / 2;
+    const cgpa = (previousCGPA + currentYearSGPA) / 2;
 
-      document.getElementById("result-display1").textContent = `CGPA: ${
-          isNaN(cgpa) ? "N/A" : cgpa.toFixed(2)
-      }`;
+    document.getElementById("result-display1").textContent = `CGPA: ${
+      isNaN(cgpa) ? "N/A" : cgpa.toFixed(2)
+    }`;
   } else {
-      document.getElementById("result-display1").textContent = "Invalid input. Please enter valid values.";
+    document.getElementById("result-display1").textContent =
+      "Invalid input. Please enter valid values.";
   }
 }
 
