@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizer</title>
-    <link rel="stylesheet" href="style-visualizer.css">
+    <link rel="stylesheet" href="../css/style-visualizer.css">
 </head>
 <body>
     <nav>
-        <div id="nav-logo"><img src="" alt="logo"></div>
-        <div id="nav-links">
-            <a href="../../../index.html">Home</a>
-            <a href="../grade-calulator/grade.html">Grade</a>
-            <a href="../../connect/src/contact.html">contact</a>
+        <div class="left-box">
+            <h2>Sorting Algorithm Visualizer</h2>
+        </div>
+        <div class="right-box">
+            <a href="../../../../index.html">Home</a>
+            <a href="../../grade-calulator/src/grade.html">Grade</a>
+            <a href="../../../connect/src/CredentialCenter.html">Sign In</a>
+            <a href="../../../connect/src/contact.html">Contact</a>
         </div>
     </nav>
-    <center>        
-        <div id="header">
-            <h3><span style="font-size: 1.5rem;">Visualizer</span> - A smart way to understand Algorithms</h3>
-            <p>
-                An algorithm visualizer is a tool or application that helps users understand and analyze algorithms by visualizing their execution step by step</p>
-        </div>
-
-        <div id="container">
-            <div id="sorting" > 
-                <a href=""><h1>sorting</h1></a>
+    <div class="container">
+        <div class="bars_container" id="bars_container"></div>
+        <div class="button_container">
+            <div class="input-container">
+                <label for="slider">Array Size</label>
+                <input type="range" id="slider" min="10" max="20" step="2" value="10">
             </div>
-            <div id="searching">
-                <a href=""><h1>searching</h1> </a>   
-            </div>
-        </div>
-    </center>
 
-    <script src="script-visualizer.js"></script>
+            <select id="speed">
+                <option value="1000">Slow</option>
+                <option value="400">Medium</option>
+                <option value="100">Fast</option>
+            </select>
+
+            <select name="" id="algo">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+
+            <button id="randomize_array_btn">Randomize Array</button>
+            <button id="sort_btn">Sort</button>
+        </div>
+    </div>
+    <script src="../scripts/script-visualizer.js"></script>
 </body>
 </html>
