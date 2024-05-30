@@ -225,3 +225,57 @@ toggle-container .container p {
 .error {
     color: red;
 }
+
+/* Overriding passwordError */
+#passwordError {
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Password strength checking */
+/* Existing CSS content here */
+
+/* Password strength checking */
+
+#bars {
+    margin: 8px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background: rgb(255 255 255 / 6%);
+}
+
+#bars div {
+    height: 6px;
+    border-radius: 3px;
+    transition: 0.4s;
+    width: 0%;
+}
+
+#bars.weak div {
+    background: #d0424f;
+    width: 33.33%;
+}
+
+#bars.medium div {
+    background: #e58448;
+    width: 66.66%;
+}
+
+#bars.strong div {
+    background: #1eb965;
+    width: 100%;
+}
+
+.strength {
+    text-align: left;
+    height: 20px;
+    text-transform: capitalize;
+    position: relative;
+    top: 4px;
+}
