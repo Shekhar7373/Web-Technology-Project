@@ -22,5 +22,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
     }
+    function heroAnimation() {
+        var timeline1 = gsap.timeline();
+        timeline1.from("nav .left-box h2, nav .right-box a, .section-header .left-section h1", {
+            y: -30,
+            opacity:0,
+            duration:0.4,
+            delay:0.6,
+            ease: "slow(0.7,0.7,false)"
+        });
+        timeline1.from(".section-header .left-section p,.section-header,.section-header .right-section .div-img img",{
+            y:30,
+            duration1:0.4,
+            opacity:0,
+            delay:0.6,
+            ease: "slow(0.7,0.7,false)"
+        },"-=1");
+    }
     guitarString('.explore-box');
+    heroAnimation();
+    
 });
