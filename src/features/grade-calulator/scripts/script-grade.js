@@ -34,6 +34,7 @@ function calculateSGPA() {
 
     console.log(`Row ${i + 1}: Grade - ${grade}, Credits - ${credits}`);
 
+    showResultBox();
     if (grade !== "-1" && !isNaN(credits)) {
       console.log("Testing: " + gradePoints[grade]);
       if (gradePoints[grade] !== undefined) {
@@ -43,16 +44,17 @@ function calculateSGPA() {
         console.log(`Invalid grade value: ${grade}`);
       }
     } else {
-      document.getElementById("result-display2").textContent =
+      document.getElementById("result-display").textContent =
         "Invalid input. Please enter valid values.";
       return;
     }
   }
 
   const sgpa = totalPoints / totalCredits;
-  document.getElementById("result-display2").textContent = `SGPA: ${
+  document.getElementById("result-display").textContent = `SGPA: ${
     isNaN(sgpa) ? "Invalid input. Please enter valid values." : sgpa.toFixed(2)
   }`;
+  
 }
 
 function calculateCGPA() {
@@ -69,13 +71,14 @@ function calculateCGPA() {
   if (!isNaN(previousCGPA) && !isNaN(currentYearSGPA)) {
     const cgpa = (previousCGPA + currentYearSGPA) / 2;
 
-    document.getElementById("result-display1").textContent = `CGPA: ${
+    document.getElementById("result-display").textContent = `CGPA: ${
       isNaN(cgpa) ? "N/A" : cgpa.toFixed(2)
     }`;
   } else {
-    document.getElementById("result-display1").textContent =
+    document.getElementById("result-display").textContent =
       "Invalid input. Please enter valid values.";
   }
+  showResultBox();
 }
 
 function addCourse() {
@@ -103,4 +106,12 @@ function addCourse() {
 
   // Insert the new row before the "Add Course +" button row
   table.insertBefore(newRow, table.lastElementChild);
+  removeResultBox()
+}
+
+function showResultBox() {
+  document.getElementById("result-display").style.visibility = "visible";
+}
+function removeResultBox() {
+  document.getElementById("result-display").style.visibility = "hidden";
 }

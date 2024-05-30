@@ -64,17 +64,17 @@ function validateEmail() {
   }
 }
 
-function validatePassword() {
-  const password = document.getElementById("password").value;
-  const passwordError = document.getElementById("passwordError");
-  if (password.length < 6) {
-    passwordError.textContent = "Password must be at least 6 characters long.";
-    return false;
-  } else {
-    passwordError.textContent = "";
-    return true;
-  }
-}
+// function validatePassword() {
+//   const password = document.getElementById("password").value;
+//   const passwordError = document.getElementById("passwordError");
+//   if (password.length < 6) {
+//     passwordError.textContent = "Password must be at least 6 characters long.";
+//     return false;
+//   } else {
+//     passwordError.textContent = "";
+//     return true;
+//   }
+// }
 
 function validateConfirmPassword() {
   const password = document.getElementById("password").value;
@@ -172,3 +172,68 @@ function verify() {
     alert("Invalid login details! Please try again.");
   }
 }
+
+// Password strength checking **************************************************************************************
+const bars = document.querySelector("#bars"),
+strengthDiv = document.querySelector("#strength"),
+passwordInput = document.querySelector("#password");
+
+const strength = {
+1: "weak",
+2: "medium",
+3: "strong",
+};
+
+const strengthColors = {
+weak: "#d0424f",
+medium: "#e58448",
+strong: "#1eb965"
+};
+
+const getIndicator = (password, strengthValue) => {
+strengthValue.upper = /[A-Z]/.test(password);
+strengthValue.lower = /[a-z]/.test(password);
+strengthValue.numbers = /\d/.test(password);
+
+let strengthIndicator = 0;
+
+for (let metric in strengthValue) {
+    if (strengthValue[metric] === true) {
+        strengthIndicator++;
+    }
+}
+
+return strength[strengthIndicator] ?? "";
+};
+
+const getStrength = (password) => {
+let strengthValue = {
+    upper: false,
+    numbers: false,
+    lower: false,
+};
+
+return getIndicator(password, strengthValue);
+};
+
+const handleChange = () => {
+let { value: password } = passwordInput;
+
+console.log(password);
+
+const strengthText = getStrength(password);
+
+bars.classList = "";
+
+if (strengthText) {
+    strengthDiv.innerText = `${strengthText} Password`;
+    bars.classList.add(strengthText);
+    // Update the color of the text based on the password strength
+    strengthDiv.style.color = strengthColors[strengthText];
+} else {
+    strengthDiv.innerText = "";
+}
+};
+
+// Event listener for the password input
+passwordInput.addEventListener('input', handleChange);

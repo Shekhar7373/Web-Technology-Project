@@ -315,16 +315,8 @@ option {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.result1,
-.result2 {
-    height: 50%;
-    width: 100%;
     margin-top: 10px;
     font-size: 1.5em;
     font-style: italic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    visibility: hidden;
 }
