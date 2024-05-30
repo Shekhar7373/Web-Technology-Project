@@ -1,0 +1,136 @@
+@font-face {
+  font-family: mainFont;
+  src: url(./Resources/MainFont.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mainFont;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  /* background: rgb(154, 233, 117);
+  background: linear-gradient(
+    79deg,
+    rgba(154, 233, 117, 0.9276960784313726) 4%,
+    rgba(200, 253, 124, 1) 20%,
+    rgba(255, 255, 255, 1) 64%
+  ); */
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  color: #191a22;
+}
+
+.left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.right-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.right-box a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #191a22;
+  cursor: pointer;
+}
+
+.section-header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+
+.left-section {
+  width: 60%;
+  height: 100%;
+  padding: 8% 0 0 80px;
+}
+
+.left-section h1 {
+  font-size: 4rem;
+  padding: 16px 0;
+  font-weight: 600;
+}
+.left-section p {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 450;
+}
+.left-section button {
+  border: none;
+  outline: none;
+  padding: 16px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  margin-top: 3vh;
+  background-color: #191a22;
+  color: #f3f3f3;
+}
+.right-section {
+  width: 40%;
+  height: 100%;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4%;
+}
+.right-section img {
+  width: 90%;
+  height: 60%;
+  object-fit: contain;
+}
+.right-section h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+#explore-section {
+  width: 100%;
+  height: max-content;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  background-color: #191a22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+}
+.feature {
+  height: 50%;
+  width: 100%;
+}
+.feature .info {
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+}
+.feature img {
+  width: 60%;
+  height: 40%;
+  object-fit: contain;
+  object-position: center;
+}
