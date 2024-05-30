@@ -62,9 +62,9 @@ nav {
 }
 
 .left-section {
-  width: 60%;
+  width: 40%;
   height: 100%;
-  padding: 8% 0 0 80px;
+  padding: 6% 0 0 80px;
 }
 
 .left-section h1 {
@@ -88,49 +88,212 @@ nav {
   color: #f3f3f3;
 }
 .right-section {
-  width: 40%;
+  width: 60%;
   height: 100%;
-  padding: 0 8%;
+  padding: 2%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  gap: 4%;
 }
-.right-section img {
-  width: 90%;
-  height: 60%;
+.right-section .div-img {
+  width: fit-content;
+  height: 85%;
+}
+.right-section .div-img img {
+  box-shadow: 10px 10px 24px -9px rgba(0, 0, 0, 0.52);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
 }
-.right-section h2 {
-  font-weight: 500;
-  font-size: 1.4rem;
-  text-align: center;
-}
+
+/* Explore secion  */
 #explore-section {
   width: 100%;
-  height: max-content;
+  height: 100%;
   border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   background-color: #191a22;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  padding: 5%;
+  padding: 3%;
+  gap: 10vh;
+  padding-bottom: 10%;
+}
+#explore-section h2 {
+  font-size: 3rem;
+  color: #f3f3f3;
+  padding-left: 2%;
+}
+#explore-section #box {
+  width: 100%;
+  height: 200px;
 }
 .feature {
-  height: 50%;
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature img {
+  width: 58vw;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
 }
 .feature .info {
   width: 30%;
   height: 100%;
-  background-color: #fff;
+  color: #f3f3f3;
 }
-.feature img {
-  width: 60%;
-  height: 40%;
+.feature .info h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-left: 7%;
+  padding-bottom: 3%;
+}
+.feature .info p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-left: 7%;
+  line-height: 30px;
+}
+.feature .info button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 3vh;
+  background-color: #9ae975;
+  color: #191a22;
+  margin-left: 7%;
+}
+
+/* About section */
+#about {
+  width: 100%;
+  height: 100%;
+  background-color: #191a22;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  background-color: #9ae975;
+  padding: 3%;
+}
+.container h2 {
+  font-size: 3rem;
+  color: #191a22;
+  padding-left: 2%;
+}
+
+.about-hero {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero-content h3 {
+  font-size: 2.3rem;
+  width: 90%;
+  font-weight: 400;
+  margin-bottom: 4%;
+}
+.hero-content h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+
+}
+.hero-content p {
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 2%;
+}
+
+.hero-content button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #191a22;
+  color: #f3f3f3;
+
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img img{
+  width: 600px;
   object-fit: contain;
   object-position: center;
+  border-radius: 20px;
+  padding: 2% 0;
 }
+
+footer {
+  width: 100%;
+  height: 17vh;
+  background-color: #191a22;
+}
+.footer-content{
+  color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+}
+.footer-content .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-section #f-head {
+  font-size: 1.1rem;
+  padding-bottom: 2%;
+  font-weight: 500;
+}
+.footer-content .f-body{
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+.footer-content .f-body a {
+  text-decoration: none;
+  color: #f3f3f3;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.footer-content .footer-section {
+  margin-right: 30%;
+}
+
+.footer-section > a {
+  text-decoration:  none;
+  color: #f3f3f3;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
