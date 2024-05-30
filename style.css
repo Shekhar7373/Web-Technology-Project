@@ -14,13 +14,7 @@ html {
 header {
   width: 100%;
   height: 100vh;
-  /* background: rgb(154, 233, 117);
-  background: linear-gradient(
-    79deg,
-    rgba(154, 233, 117, 0.9276960784313726) 4%,
-    rgba(200, 253, 124, 1) 20%,
-    rgba(255, 255, 255, 1) 64%
-  ); */
+
 }
 
 nav {
@@ -54,7 +48,10 @@ nav {
   color: #191a22;
   cursor: pointer;
 }
-
+.right-box a:hover {
+  border-bottom: #9ae975 solid;
+  border-radius: 2px;
+}
 .section-header {
   width: 100%;
   height: 90vh;
@@ -86,6 +83,7 @@ nav {
   margin-top: 3vh;
   background-color: #191a22;
   color: #f3f3f3;
+  transition: 0.3s ease;
 }
 .right-section {
   width: 60%;
@@ -173,6 +171,7 @@ nav {
   background-color: #9ae975;
   color: #191a22;
   margin-left: 7%;
+  transition: 0.3s ease;
 }
 
 /* About section */
@@ -233,7 +232,7 @@ nav {
   border-radius: 10px;
   background-color: #191a22;
   color: #f3f3f3;
-
+  transition: 0.3s ease;
 }
 .hero-img {
   width: 100%;
@@ -297,3 +296,12 @@ footer {
   font-size: 1.2rem;
 }
 
+/* Button Hover  */
+.btn:hover{
+  color: #9ae975;
+  transform: translateY(-3px);
+}
+.btn-f:hover{
+  color: #000;
+  transform: translateY(-3px);
+}
