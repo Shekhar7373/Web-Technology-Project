@@ -1,120 +1,79 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../../../../Resources/MainFont.woff2);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: mainFont;
+
 }
 
 body {
-    background-color: #c9d6ff;
+    background-color: #e1e7f9;
 }
-
-header .txt-format {
-    font-family: "noto sans";
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-header {
-    position: relative;
+nav {
     width: 100%;
-    max-height: 10vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding: 30px 40px;
+    padding: 18px;
     align-items: center;
+    background-color: #191a22;
 }
-
-header p.txt-format {
-    font-size: 1.5em;
-    color: #333;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    font-size: 1.1em;
-}
-
-header:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-header:hover a {
-    color: grey;
-}
-
-.nav__links a:hover {
-    color: #333;
-}
-
-.search-bar {
-    width: 18vw;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    position: relative;
-}
-
-.search-row {
-    width: inherit;
-    height: auto;
+.left-box {
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-}
+    justify-content: center;
+    padding-left: 50px;
 
-#input-box {
-    flex: 1;
-    background: transparent;
-    border: none;
-    outline: 0;
-    font-size: 1em;
 }
-
-.search-row button {
-    border: none;
-    outline: none;
-    background: transparent;
+.left-box h2 {
+    box-shadow: inset 0 0 0 0 #c8fd7c;
+    margin: 0;
+    /* color: #191a22; */
+    color: #f3f3f3;
+    padding: 0 0.25rem;
+    margin: 0 -0.25rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 14px;
+    padding: 5px 8px;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
-.search-row button .ri-search-line {
-    width: 22px;
-    color: #333;
-    font-size: 20px;
-    cursor: pointer;
+.left-box h2:hover {
+    color: #191a22;
+    border-radius: 14px;
+    padding: 5px 8px;
+    box-shadow: inset 190px 0 0 0 #c8fd7c;
 }
-
-#input-box::placeholder {
-    color: #333;
-    opacity: 0.6;
+.right-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    gap: 4vw;
 }
-
-header:hover .search-bar {
-    background-color: #c9d6ff;
-    transition: 0.6s;
+  
+.right-box a {
+    text-decoration: none;
+    color: #f3f3f3  ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: inset 0 0 0 0 #c8fd7c;
+    padding: 0 0.25rem;
+    margin: 0 -0.25rem;
+    border-radius: 14px;
+    padding: 5px 8px;
+    transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
-
-header:hover .ri-search-line {
-    color: #fff;
-}
-
-header:hover #input-box::placeholder {
-    color: #333;
-    opacity: 0.9;
-}
-
-header:hover #input-box {
-    background-color: #c9d6ff;
-    color: #333;
+a:hover {
+    color: #191a22;
+    border-radius: 14px;
+    padding: 5px 8px;
+    box-shadow: inset 200px 0 0 0 #c8fd7c;
 }
 
 .backimages {
@@ -123,9 +82,10 @@ header:hover #input-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 80px;
     background-color: #9AE975;
     margin-bottom: 50px;
-    box-shadow: 0 0 10px rgba(11, 1, 1, 0.5);
+    /* box-shadow: 0 0px 10px rgba(11, 1, 1, 0.5); */
 }
 
 h1,
@@ -135,13 +95,14 @@ p {
 
 h1 {
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2em;
-    font-weight: 250;
+    font-weight: 400;
+
 }
 
 .calculator {
@@ -176,8 +137,8 @@ th {
 
 h2 {
     font-size: 1.4em;
-    color: #333;
-    font-weight: 400;
+    color: #191a22;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -213,7 +174,6 @@ select,
     font-size: 1.4em;
     padding-left: 12px;
     color: #333;
-    opacity: .9;
 }
 
 .clearbtn {
@@ -241,12 +201,15 @@ select,
     border: none;
     outline: none;
     margin: 30px;
+    transition: 0.2s ease;
+    box-shadow: 0 0 10px rgba(186, 198, 237, 0.9);
+    background-color: #191a22;
+    color: #9AE975;
 }
 
 .calculatebtn1:hover,
 .calculatebtn2:hover {
-    /* width: 185px; */
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 .course {
@@ -266,7 +229,6 @@ select,
 
 select {
     font-size: 1.1em;
-    opacity: 0.7;
     margin-right: 20px;
     margin-bottom: 10px;
 }
@@ -278,7 +240,7 @@ select {
     border: none;
     outline: none;
     font-size: 1.1em;
-    opacity: .8;
+    opacity: 0.9;
 }
 
 .cgpa,
@@ -291,28 +253,27 @@ select {
 .credits,
 .sgpa,
 .cgpa,
-.calculatebtn2,
-.calculatebtn1,
 .addcourse,
 select {
-    background-color: #c9d6ff;
-    /* box-shadow: 0 0 10px rgba(6, 247, 107, 0.9); */
-    box-shadow: 0 0 10px rgba(47, 41, 174, 0.9);
-    color: #333;
+    box-shadow: 0 0 10px rgba(186, 198, 237, 0.9);
+    background-color: #191a22;
+    color: #f3f3f3;
 }
-
 .grade {
-    box-shadow: 0 0 10px rgba(47, 41, 174, 0.9);
+    box-shadow: 0 0 10px rgba(186, 198, 237, 0.9);
     outline: #000;
     border: #000;
-    background-color: #c9d6ff;
+    background-color: #191a22;
+    color: #f3f3f3;
 }
 
 .course::placeholder,
 .credits::placeholder,
 .cgpa::placeholder,
 .sgpa::placeholder {
+    color: #f3f3f3;
     font-size: 1em;
+    padding: 0; 
 }
 
 option,
@@ -344,8 +305,8 @@ option {
     height: 400px;
     width: 400px;
     margin: 20px 20px 20px 90px;
-    box-shadow: 0 0 10px rgba(47, 41, 174, 0.9);
-    color: #333;
+    box-shadow: 0 0 10px rgb(154, 166, 204);
+    color: #191a22;
     background-color: #9AE975;
     border-radius: 20px;
     padding: 20px;
