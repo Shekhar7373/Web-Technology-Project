@@ -302,12 +302,12 @@ option {
 
 .result {
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     margin: 20px 20px 20px 90px;
     box-shadow: 0 0 10px rgb(154, 166, 204);
     color: #191a22;
-    background-color: #9AE975;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -318,5 +318,5 @@ option {
     margin-top: 10px;
     font-size: 1.5em;
     font-style: italic;
-    visibility: hidden;
+    opacity: 0;
 }
