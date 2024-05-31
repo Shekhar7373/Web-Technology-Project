@@ -54,7 +54,6 @@ function calculateSGPA() {
   document.getElementById("result-display").textContent = `SGPA: ${
     isNaN(sgpa) ? "Invalid input. Please enter valid values." : sgpa.toFixed(2)
   }`;
-  
 }
 
 function calculateCGPA() {
@@ -106,11 +105,11 @@ function addCourse() {
 
   // Insert the new row before the "Add Course +" button row
   table.insertBefore(newRow, table.lastElementChild);
-  removeResultBox()
+  removeResultBox();
 }
 
 function showResultBox() {
-  document.getElementById("result-display").style.visibility = "visible";
+  document.getElementById("result-display").style.opacity = "1";
 }
 function removeResultBox() {
   document.getElementById("result-display").style.visibility = "hidden";
