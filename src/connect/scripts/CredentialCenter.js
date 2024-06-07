@@ -142,7 +142,7 @@ function validateSignInPassword() {
   const passwd = document.getElementById("chkpasswd").value;
   const signInPasswordError = document.getElementById("signInPasswordError");
   if (password.trim() === "" || passwd != password) {
-    signInPasswordError.textContent = "Valid Password is required.";
+    signInPasswordError.textContent = passwd;
     return false;
   } else {
     signInPasswordError.textContent = "";
@@ -156,8 +156,10 @@ function checkallfields() {
   const btn = document.getElementById("loginbtn");
   if (usn.trim() === "" || password.trim() === "") {
     btn.disabled = true;
+    return false;
   } else {
     btn.disabled = false;
+    return true;
   }
 }
 
