@@ -12,20 +12,22 @@
     <section>
         <div class="container">
             <h1>Contact Us</h1>
-            <form>
+            <form onsubmit="return validate();">
                 <div class="form-control">
-                    <input type="email" required>
+                    <input type="email" required name="email" id="email">
                     <label>Email</label>
                 </div>
 
                 <div class="form-control">
-                    <textarea name="txt-mesg" class="txtmsg" cols="30" rows="10" required
+                    <textarea name="message" id="message" class="txtmsg" cols="30" rows="10" required
                         placeholder="Your Message"></textarea>
                 </div>
-                <input type="button" value="Submit" class="btn">
+                <input type="submit" value="Submit" class="btn">
             </form>
         </div>
     </section>
+
+    <script src="../scripts/contact.js"></script>
 </body>
 
 </html>
