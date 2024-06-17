@@ -69,7 +69,8 @@ function calculateCGPA() {
 
   if (!isNaN(previousCGPA) && !isNaN(currentYearSGPA)) {
     const cgpa = (previousCGPA + currentYearSGPA) / 2;
-
+  console.log(typeof(previousCGPA),currentYearSGPA);
+  console.log(cgpa);
     document.getElementById("result-display").textContent = `CGPA: ${
       isNaN(cgpa) ? "N/A" : cgpa.toFixed(2)
     }`;
@@ -112,5 +113,5 @@ function showResultBox() {
   document.getElementById("result-display").style.opacity = "1";
 }
 function removeResultBox() {
-  document.getElementById("result-display").style.visibility = "hidden";
+  document.getElementById("result-display").style.opacity = "0";
 }
